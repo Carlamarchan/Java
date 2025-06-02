@@ -6,6 +6,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
 
+        // EJERCICIO 1
         Disco disco1 = new Disco();
         disco1.setArtista("Carlos Vives");
         disco1.setTitulo("Cumbiana");
@@ -63,11 +64,21 @@ public class App {
                 System.out.println("Gracias por participar!");
             }
         } while (!opcion.equals("6"));
-
         teclado.close();
+
+        // EJERCICIO 2
+
+        ArrayList<String> ciudades = new ArrayList<>(Arrays.asList("Riobamba", "Ambato", "Cuenca", "Loja", "Quito",
+                "Salcedo", "Latacunga", "Guayaquil", "El Oro", "Puyo", "Tena", "Macas", "Alausí", "Santo Domingo",
+                "Esmeraldas", "Napo", "Cañar", "Carchi", "Imbabura", "Santa Elena"));
+        for (int i = 0; i < 3; i++) {
+            int random = aplicarRandom();
+            System.out.println(ciudades.get(random) + random);
+        }
 
     }
 
+    // MÉTODOS EJERCICIO 1
     public static Disco crearDisco(Scanner teclado) {
         System.out.println("Ingresa el artista: ");
         String artista = teclado.nextLine();
@@ -128,5 +139,11 @@ public class App {
             }
         }
         return false;
+    }
+
+    // MÉTODOS EJERCICIO 2
+    public static int aplicarRandom() {
+        int numero = (int) (Math.random() * 20);
+        return numero;
     }
 }
