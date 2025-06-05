@@ -48,7 +48,7 @@ public class Casual {
 
     @Override
     public String toString() {
-        return "\nZapato Casual [marca= " + marca + ", modelo= " + modelo + ", material= " + material + ", precio= "
+        return "Zapato Casual [marca= " + marca + ", modelo= " + modelo + ", material= " + material + ", precio= "
                 + precio
                 + " euros]";
     }

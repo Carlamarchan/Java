@@ -48,7 +48,7 @@ public class Deportivo {
 
     @Override
     public String toString() {
-        return "\nZapato Deportivo [marca= " + marca + ", modelo= " + modelo + ", material= " + material + ", precio= "
+        return "Zapato Deportivo [marca= " + marca + ", modelo= " + modelo + ", material= " + material + ", precio= "
                 + precio
                 + " euros]";
     }

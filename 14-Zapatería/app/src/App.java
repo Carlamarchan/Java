@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -18,6 +19,7 @@ public class App {
         Scanner teclado = new Scanner(System.in);
         String opcion = "";
         Float total = 0F;
+        //ZAPATERÍA DÍA 1 ARRAYS SEPARADOS POR CLASE
         do {
             System.out.println(
                     "Qué tipo de zapato desea comprar? \n1.- Casuales \n2.- Deportivos \n3.- Elegantes \n4.- Salir");
@@ -85,7 +87,7 @@ public class App {
                     }while(!modelo.equalsIgnoreCase("Adidas") && !modelo.equalsIgnoreCase("Zara"));
                         break;
                     default:
-                        break;
+                    System.out.println("Opción incorrecta");
                 }
             } else {
                 System.out.println("Debes pagar en caja " + total+" euros.");
