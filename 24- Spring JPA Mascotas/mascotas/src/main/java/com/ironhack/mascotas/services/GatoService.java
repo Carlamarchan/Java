@@ -14,21 +14,22 @@ public class GatoService {
     private GatoRepository gatoRepository;
 
     //Consultar todos los empleados
-    public List<Gato> consultarGatos(){
+    public List<Gato> consultarGatos() {
         return (List<Gato>) gatoRepository.findAll();
     }
 
     //Buscar uno por ID
-    public Optional<Gato> findById(Long id){
+    public Optional<Gato> findById(Long id) {
         return gatoRepository.findById(id);
     }
 
-    //Registrar uno
-    public Gato saveGato(Gato newGato){
+    //Guardar uno
+    public Gato saveGato(Gato newGato) {
         return gatoRepository.save(newGato);
     }
+
     //Eliminar uno
-    public void deleteGato(Long id){
+    public void deleteGato(Long id) {
         gatoRepository.deleteById(id);
     }
 }

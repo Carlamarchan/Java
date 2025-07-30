@@ -2,7 +2,6 @@ package com.ironhack.mascotas.controllers;
 
 import com.ironhack.mascotas.entities.Gato;
 import com.ironhack.mascotas.services.GatoService;
-import org.aspectj.apache.bcel.classfile.Module;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/gatos")
-public class gatoController {
+public class GatoController {
 
     @Autowired
     private GatoService gatoService;

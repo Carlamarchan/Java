@@ -1,5 +1,4 @@
 package com.ironhack.mascotas.repositories;
-
 import com.ironhack.mascotas.entities.Gato;
 import org.springframework.data.jpa.repository.JpaRepository;
 
