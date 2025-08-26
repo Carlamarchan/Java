@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>CRUD con API JSONplaceholder.typecode</h1>
+      <br />
+    </div>
+
+    <div id="container">
+      <div class="caja">
+        <div class="caja2">
+          <button class="boton" onclick="verTodos()">Mostrar todos</button
+          ><br />
+          <div id="res1"></div>
+        </div>
+      </div>
+      <div class="caja">
+        <div class="caja2">
+          <button class="boton" onclick="verUno()">Mostrar por ID</button><br />
+          <label for="id">Ingresa el ID a burcar:</label>
+          <input type="text" name="id" id="id" /><br />
+          <div id="res2"></div>
+        </div>
+      </div>
+      <div class="caja">
+        <div class="caja2">
+          <button class="boton" onclick="sumarUno()">Agregar uno</button><br />
+          <div id="res3"></div>
+        </div>
+      </div>
+      <div class="caja">
+        <div class="caja2">
+          <button class="boton" onclick="cambiarUno()">Modificar uno</button
+          ><br />
+          <label for="id">Ingresa el ID a modificar:</label>
+          <input type="text" name="id" id="idAModificar" /><br />
+          <div id="res4"></div>
+        </div>
+      </div>
+      <div class="caja">
+        <div class="caja2">
+          <button class="boton" onclick="borrarUnoPorId()">Eliminar uno</button
+          ><br />
+          <label for="id">Ingresa el ID a eliminar:</label>
+          <input type="text" name="id" id="idAEliminar" /><br />
+          <div id="res5"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

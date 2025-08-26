@@ -1,0 +1,34 @@
+.header {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+.caja {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(138, 201, 141);
+  vertical-align: center;
+}
+.caja2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  background-color:  rgb(138, 201, 141);
+  columns: 1;
+  text-align: center;
+}
+#boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
