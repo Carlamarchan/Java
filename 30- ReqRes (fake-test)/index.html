@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Prueba FAKE Api rest</h1>
+    <form id="formulario1">
+      <fieldset>
+        <legend>Buscar usuario por ID:</legend>
+        <input type="text" placeholder="Escribe el número de ID" id="userid" />
+        <button id="enviar">Enviar!</button>
+      </fieldset>
+    </form>
+<br>
+
+    <form id="formulario2">
+      <fieldset>
+        <legend>Crear un nuevo suario:</legend>
+        <input type="text" id="nuevoNombre" placeholder="Nombre" />
+        <input type="text" id="nuevoApellido" placeholder="Apellido" />
+        <input type="text" id="nuevoEmail" placeholder="email" />
+        <button id="addUser" type="submit">Añadir usuario</button>
+      </fieldset>
+    </form>
+    <br />
+
+    <form id="formulario3">
+      <fieldset>
+        <legend>Actualizar un usuario:</legend>
+        <input type="text" id="actualizarNombre" placeholder="Nombre" />
+        <input type="text" id="actualizarApellido" placeholder="Apellido" />
+        <input type="text" id="actualizarEmail" placeholder="email" />
+        <button id="addUser" type="submit">Añadir usuario</button>
+      </fieldset>
+    </form>
+
+    <div id="card">
+      <img src="" id="imagenperfil" />
+      <p id="nombre"></p>
+      <p id="apellido"></p>
+      <p id="email"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+#card{
+    width: 230px;
+    background-color: rgb(1, 64, 83);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top:20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+#imagenperfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+#card:hover{
+    scale: 1.05;
+    transition: 0.3;
+}
