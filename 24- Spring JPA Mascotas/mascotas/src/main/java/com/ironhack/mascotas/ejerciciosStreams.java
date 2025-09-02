@@ -1,6 +1,8 @@
 package com.ironhack.mascotas;
 
 
+import com.ironhack.mascotas.entities.Colores;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -44,6 +46,11 @@ public class ejerciciosStreams {
 
                 //.findAny()
                // .ifPresent(System.out::println);
+        Colores color=Colores.ROJO;
+        System.out.println("El color "+color+" R= "+color.getR()+" G= "+color.getG()+" B= "+color.getB());
+
     }
+
+
 
 }

@@ -1,25 +1,22 @@
-package com.ironhack.mascotas.entities;
+package com.ironhack.mascotas.dtos.gato;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import jakarta.persistence.*;
-import lombok.NoArgsConstructor;
-
-@Entity
-@NoArgsConstructor
-@Table(name = "gato")
-public class Gato {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class GetGatoDto {
     private Long id;
     private String name;
     private int age;
     private String image;
     private String chipID;
 
-    @ManyToOne
-    @JoinColumn(name = "ownerId")
-    @JsonIgnoreProperties(value = "listaDeGatos", allowSetters = true)
-    private Owner owner;
+    public GetGatoDto() {
+    }
+
+    public GetGatoDto(Long id, String name, int age, String image, String chipID) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.image = image;
+        this.chipID = chipID;
+    }
 
     public Long getId() {
         return id;
@@ -53,14 +50,6 @@ public class Gato {
         this.image = image;
     }
 
-    public Owner getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
-
     public String getChipID() {
         return chipID;
     }
@@ -68,12 +57,5 @@ public class Gato {
     public void setChipID(String chipID) {
         this.chipID = chipID;
     }
-
-    /*  POSTMAN
-    {
-        "name": "Dulce",
-            "age": 4,
-    }*/
-
 
 }
