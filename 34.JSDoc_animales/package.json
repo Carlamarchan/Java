@@ -1,0 +1,12 @@
+{
+  "name": "jsdoc-animales",
+  "version": "1.0.0",
+  "description": "Ejemplo de proyecto con animales documentado con JSDoc",
+  "main": "src/animales.js",
+  "scripts": {
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "author": "Ejemplo",
+  "license": "MIT",
+  "devDependencies": {}
+}
