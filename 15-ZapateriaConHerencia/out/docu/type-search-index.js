@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"zapateria","l":"App"},{"p":"zapateria","l":"CarritoDeLaCompra"},{"p":"zapateria","l":"Casual"},{"p":"zapateria","l":"Deportivo"},{"p":"zapateria","l":"Elegante"},{"p":"zapateria","l":"TiendaZapatos"},{"p":"zapateria","l":"Zapato"}];updateSearchResults();
